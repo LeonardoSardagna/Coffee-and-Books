@@ -1,0 +1,33 @@
+.container_menu_hamburger{
+    background-image: url(../imagens/Menu.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor_secundaria);
+    position: relative;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+.container_imagem{
+    padding: 1em
+}
+.lista_menu{
+    display: none;
+    position: absolute;
+}
+.container_botao:checked ~ .lista_menu{
+    display: block;
+    top: 100%;
+}
+#menu{
+    display: none;
+}

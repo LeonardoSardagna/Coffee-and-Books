@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --cor_principal: #EBECEE;
+    --cor_secundaria: #FFFFFF;
+}
+body{
+    background-color: var(--cor_principal);
+    box-sizing: border-box;
+}
