@@ -1,0 +1,13 @@
+.baner{
+    background: var(--cor_topico_hamburguer);
+    color: var(--cor_secundaria);
+    padding: 2.5em 2em;
+    text-align: center;
+}
+.baner_titulo{
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+.baner_texto{
+    font-weight: 500;
+}

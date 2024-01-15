@@ -31,3 +31,20 @@
 #menu{
     display: none;
 }
+.lista_menu_titulo, .lista_menu_item{
+    background-color: var(--cor_secundaria);
+    padding: 1em;
+    width: 40vw;
+}
+.lista_menu_titulo{
+    color: var(--cor_titulo_hamburguer);
+    font-weight: 700;
+}
+.lista_menu_link{
+    text-decoration: none;
+    background: var(--cor_topico_hamburguer);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
