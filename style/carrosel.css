@@ -1,0 +1,21 @@
+.carrossel{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--cor_titulo_hamburguer);
+    font-size: 0.9rem;
+    padding: 1em 0 1em 0;
+    background-color: var(--cor_secundaria);
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    display: none;
+}
+
+.swiper-pagination{
+    position: initial;
+    margin: .5em 0;
+}
