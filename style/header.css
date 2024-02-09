@@ -23,10 +23,11 @@
 .lista_menu{
     display: none;
     position: absolute;
+    top: 100%;
+    width: 60vw;
 }
 .container_botao:checked ~ .lista_menu{
     display: block;
-    top: 100%;
 }
 #menu{
     display: none;
@@ -34,7 +35,6 @@
 .lista_menu_titulo, .lista_menu_item{
     background-color: var(--cor_secundaria);
     padding: 1em;
-    width: 40vw;
 }
 .lista_menu_titulo{
     color: var(--cor_titulo_hamburguer);
@@ -47,4 +47,31 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
+}
+
+.baner_titulo{
+    margin-bottom: 10px;
+}
+
+.baner_texto{
+    margin-bottom: 10px;
+}
+
+.baner_pesquisa{
+    background: transparent;
+    border: solid 1px var(--cor_secundaria);
+    color: var(--cor_secundaria);
+    border-radius: 24px;
+    padding: 1em;
+    width: 100%;
+}
+
+.baner_pesquisa::placeholder{
+    font-family: var(--fonte_principal);
+    color: var(--cor_secundaria);
+    font-size: 1em;
+    text-align: center;
+    font-weight: 400;
+    background: url(../imagens/lupa.png) no-repeat;
+    background-position: 1em;
 }
