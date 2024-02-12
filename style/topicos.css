@@ -1,0 +1,82 @@
+.card{
+    background-color: var(--cor_secundaria);
+    margin: 1em;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.253);
+}
+
+.card_descricao{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.descricao_titulo{
+    color: var(--cor_titulo_hamburguer);
+    font-weight: 700;
+}
+
+.descricao_titulo_produto{
+    color: var(--azul);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.card_botoes{
+    display: flex;
+    justify-content: space-between;
+}
+.botoes{
+    display: flex;
+    margin: 0.5em 0.5em
+}
+
+.botoes_item{
+    list-style-type: none;
+}
+
+.botao_ancora{
+    text-decoration: none;
+    color: white;
+    background-color: var(--cor_titulo_hamburguer);
+    padding: 1em 2.2em;
+    font-weight: 700;
+    margin-top: 0.5em;
+    border-radius: 10px;
+}
+
+.topicos{
+    background: var(--cor_topico_hamburguer);
+    text-align: center;
+    padding: 1em 0;
+}
+
+.topicos_titulo{
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.topicos_lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.topicos_item{
+    list-style-type: none;
+    background-color: var(--cor_titulo_hamburguer);
+    padding: 0.7em;
+    margin: 1em;
+    border-radius: 10px;
+}
+
+.topicos_link{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.5em;
+    font-size: 14px;
+}

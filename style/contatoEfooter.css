@@ -1,0 +1,38 @@
+.contato{
+    background: var(--cor_secundaria);
+    padding: 1em;
+}
+.contato_titulo{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--azul);
+}
+
+.contato_descricao{
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--azul);
+    margin: 1em 0;
+}
+
+.contato_input{
+    border: 1px solid var(--azul);
+    border-radius: 24px;
+    padding: 1em;
+    width: 90%;
+    color: var(--azul);
+}
+
+.contato_input::placeholder{
+    color: var(--azul);
+    font-family: var(--fonte_principal);
+    padding-left: 2em;
+    background: url(../imagens/Vector.png) no-repeat;
+}
+
+footer{
+    border-top: 1px solid black;
+    padding: 1em;
+    background: var(--cor_secundaria);
+    font-weight: 400;
+}

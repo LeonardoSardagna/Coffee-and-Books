@@ -8,6 +8,7 @@
     --cor_principal: #EBECEE;
     --cor_secundaria: #FFFFFF;
     --cor_titulo_hamburguer: #EB9B00;
+    --azul: #002F52;
     --cor_topico_hamburguer: linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
     --fonte_principal: 'Poppins', sans-serif;
 }
@@ -16,5 +17,5 @@ body{
    
     font-family: var(--fonte_principal);
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 16px;
 }
