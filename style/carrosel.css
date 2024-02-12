@@ -19,3 +19,38 @@
     position: initial;
     margin: .5em 0;
 }
+
+@media screen and (min-width: 1024px){
+
+    .carrossel{
+        padding: 0;
+    }
+
+    .swiper{
+       margin-top: 25px;
+       background: var(--cinza);
+       padding: 1em 6em 1em 6em;
+    }
+
+    .swiper-pagination{
+        margin: 2em 0 3em 0;
+    }
+
+    .swiper-button-prev, .swiper-button-next{
+        display: block;
+        background-color: var(--azul);
+        color: white;
+        padding: 1.4em;
+        border-radius: 50%;
+        margin: 0 3em;
+    }
+
+    .swiper-slide img{
+        width: 60%;
+    }
+
+    .carrossel-titulo{
+        padding-top: 50px;
+        font-size: 26px;
+    }
+}

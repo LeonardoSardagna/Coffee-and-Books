@@ -36,3 +36,25 @@ footer{
     background: var(--cor_secundaria);
     font-weight: 400;
 }
+
+@media screen and (min-width: 1024px){
+    .contato{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contato_titulo{
+        font-size: 24px;
+    }
+
+    .contato_descricao{
+        margin-right: 1em;
+        font-size: 16px;
+        width: 60%;
+    }
+
+    .contato_input{
+        width: 30%;
+    }
+}

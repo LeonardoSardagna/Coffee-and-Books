@@ -57,6 +57,7 @@
     font-size: 16px;
     color: white;
     margin-bottom: 1em;
+    text-transform: uppercase;
 }
 
 .topicos_lista{
@@ -79,4 +80,40 @@
     font-weight: 700;
     padding: 0.5em;
     font-size: 14px;
+}
+
+@media screen and (min-width: 1024px){
+    .card{
+        width: 40%;
+        margin: 2em auto;
+        
+    }
+    .descricao{
+        margin: 0 2em 0 0
+    }
+
+    .descricao_titulo{
+        margin-bottom: 0.9em;
+    }
+
+    .botoes{
+        margin: 0 0 0 -0.5em;
+    }
+
+    .topicos_titulo{
+        font-size:24px;
+        font-weight: 300;
+    }
+
+    .topicos_link{
+        font-size: 20px;
+    }
+
+    .topicos_lista{
+        padding: 0 10em 0 10em;
+    }
+
+    .topicos_item{
+        padding: 0.7em;
+    }
 }
