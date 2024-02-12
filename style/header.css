@@ -17,6 +17,19 @@
     display: flex;
     align-items: center;
 }
+
+.container_titulo{
+    display: none;
+}
+
+.lista{
+    display: none;
+}
+
+.opcoes{
+    display: none;
+}
+
 .container_imagem{
     padding: 1em
 }
@@ -74,4 +87,52 @@
     font-weight: 400;
     background: url(../imagens/lupa.png) no-repeat;
     background-position: 1em;
+}
+
+@media screen and (min-width: 1024px){
+    .container_titulo{
+        font-family: var(--fonte_secundaria);
+        font-size: 30px;
+        font-weight: 300;
+        display: block;
+    }
+    .container_menu_hamburger{
+        display: none;
+    }
+
+    .favorito_transparente{
+        display: none;
+    }
+
+    .opcoes{
+        display: flex;
+    }
+
+    .opcoes_item{
+        list-style-type: none;
+    }
+
+    .opcoes_link{
+        text-decoration: none;
+        color:black;
+        text-transform: uppercase;
+        padding:  0 1em;
+    }
+   
+    .opcoes-botao:checked ~ .lista_menu{
+        display: block;
+    }
+
+    .lista_menu_item{
+        list-style-type: none;
+    }
+
+    .lista_menu{
+        width: auto;
+        margin-top: -20px;
+    }
+
+    .opcoes-botao{
+        display: none;
+    }
 }
