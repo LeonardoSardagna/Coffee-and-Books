@@ -37,6 +37,10 @@ footer{
     font-weight: 400;
 }
 
+.lista_rodape, .rodape_direitos{
+    display: none;
+}
+
 @media screen and (min-width: 1024px){
     .contato{
         display: flex;
@@ -56,5 +60,54 @@ footer{
 
     .contato_input{
         width: 30%;
+    }
+
+    .rodape{
+        display: flex;
+        justify-content: space-around;
+        margin: 1em 0;
+    }
+
+    .rodape-titulo{
+        font-weight: 400;
+        font-size: 1.2em;
+    }
+
+    .lista_rodape-titulo{
+        font-size: 14px;
+        color: var(--azul);
+        list-style-type: none;
+        text-transform: uppercase;
+    }
+
+    .lista_rodape{
+        list-style-type: none;
+        display: block;
+        border-left: 1px solid var(--cinza);
+        padding-left: 1em;
+    }
+
+    .lista_rodape-link{
+        text-decoration: none;
+        color: var(--cinza_escuro);
+        font-size: 14px;
+    }
+
+    .rodape_direitos{
+        display: block;
+    }
+
+    .rodape_direitos p{
+        text-align: center;
+        font-size: 14px;
+        color: var(--cinza_escuro);
+        margin: 1em 0;
+    }
+
+}
+
+@media screen and (min-width: 1728px){
+    .contato_input{
+        width: 20%;
     }
 }

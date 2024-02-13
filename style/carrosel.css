@@ -1,4 +1,4 @@
-.carrossel{
+.carrossel-titulo{
     text-align: center;
     text-transform: uppercase;
     color: var(--cor_titulo_hamburguer);
@@ -53,4 +53,44 @@
         padding-top: 50px;
         font-size: 26px;
     }
+}
+
+@media screen and (min-width: 1724px){
+        .carrossel_container{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 10vw 3em 10vw;
+            align-items: center;
+        }
+   
+        .swiper{
+            width: 60%;
+        }
+
+        .swiper-pagination{
+            margin: 0 0 2em 0;
+        }
+
+        .card{
+            margin-left: 10em;
+            width: 50%;
+        }
+
+        .descricao_titulo{
+            font-size: 32px;
+            margin-bottom: 0.2em;
+        }
+
+        .descricao_titulo_produto{
+            font-size: 18px;
+        }
+
+        .swiper-slide img{
+            width: 100%;
+        }
+
+        .swiper-button-prev, .swiper-button-next{
+            margin: 0;
+        } 
+
 }

@@ -13,7 +13,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <link rel="stylesheet" href="style/carrosel.css">
     <script src="carrossel.js" defer></script>
-    
 </head>
 <body>
     <header class="cabecalho">
@@ -51,9 +50,9 @@
             <li class="opcoes_item"><a class="opcoes_link" href="#">minha estante</a></li>
         </ul>
         <div class="container">
-            <a href="#"><img src="imagens/Favoritos.png" alt="logo favorito" class="container_imagem favorito_transparente"></a>
-            <a href="#"><img src="imagens/Compras.png" alt="logo carrinho de compras" class="container_imagem"></a>
-            <a href="#"><img src="imagens/Usuário.png" alt="logo usuario" class="container_imagem"></a>
+            <a href="#" class="container_link"><img src="imagens/Favoritos.png" alt="logo favorito" class="container_imagem favorito_transparente"></a>
+            <a href="#" class="container_link"><img src="imagens/Compras.png" alt="logo carrinho de compras" class="container_imagem"> <p class="container_texto">Minha Sacola</p></a>
+            <a href="#" class="container_link"><img src="imagens/Usuário.png" alt="logo usuario" class="container_imagem"><p class="container_texto">Meu perfil</p></a>
         </div>
     </header>
     <section class="baner">
@@ -63,6 +62,7 @@
     </section>
     <section class="carrossel">
         <h2 class="carrossel-titulo">Últimos Lançamentos</h2>
+        <div class="carrossel_container">
         <div class="swiper">
             <div class="swiper-pagination"></div>
             <div class="swiper-wrapper">
@@ -78,7 +78,6 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
           </div>
-    </section>
     <div class="card">
         <div class="card_descricao">
             <div class="descricao">
@@ -88,7 +87,6 @@
             </div>
             <img src="imagens/Angular.png" alt="">
         </div>
-
         <div class="card_botoes">
             <ul class="botoes">
                 <li class="botoes_item"><img src="imagens/Favoritos.png" alt=""></li>
@@ -97,39 +95,43 @@
             <a class="botao_ancora" href="">Saiba mais</a>
         </div>
     </div>
+</div>
+</section>
     <section class="carrossel">
         <h2 class="carrossel-titulo">mais vendidos</h2>
-        <div class="swiper">
-            <div class="swiper-pagination"></div>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="imagens/comofazeramigos.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="imagens/nadapodemeferri.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="imagens/nuncaehoradeparar.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="imagens/fbi.webp" alt=""></div>
+        <div class="carrossel_container">
+            <div class="swiper">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="imagens/comofazeramigos.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="imagens/nadapodemeferri.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="imagens/nuncaehoradeparar.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="imagens/fbi.webp" alt=""></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+                
+                <div class="card">
+            <div class="card_descricao">
+                <div class="descricao">
+                    <img src="imagens/Estrelinhas.png" alt="">
+                    <h3 class="descricao_titulo">Autora do Mês</h3>
+                    <h2 class="descricao_titulo_produto">Juliana Agarikov</h2>
+                    <p>Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+                </div>
+                <img src="imagens/Perfil-escritora 1.png" alt="">
             </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-    </section>
-    <div class="card">
-        <div class="card_descricao">
-            <div class="descricao">
-                <img src="imagens/Estrelinhas.png" alt="">
-                <h3 class="descricao_titulo">Autora do Mês</h3>
-                <h2 class="descricao_titulo_produto">Juliana Agarikov</h2>
-                <p>Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+            <div class="card_botoes">
+                <ul class="botoes">
+                    <li class="botoes_item"><img src="imagens/Favoritos.png" alt=""></li>
+                    <li class="botoes_item"><img src="imagens/Compras.png" alt=""></li>
+                </ul>
+                <a class="botao_ancora" href="">Saiba mais</a>
             </div>
-            <img src="imagens/Perfil-escritora 1.png" alt="">
+                </div>
         </div>
-
-        <div class="card_botoes">
-            <ul class="botoes">
-                <li class="botoes_item"><img src="imagens/Favoritos.png" alt=""></li>
-                <li class="botoes_item"><img src="imagens/Compras.png" alt=""></li>
-            </ul>
-            <a class="botao_ancora" href="">Saiba mais</a>
-        </div>
-    </div>
+</section>
     <section class="topicos">
         <h2 class="topicos_titulo">Tópicos visitados recentemente</h2>
         <ul class="topicos_lista">
@@ -167,7 +169,35 @@
         <input type="email" class="contato_input" placeholder="Cadastre seu e-mail">
     </section>
     <footer>
-        <p>Grupo Alura</p>
+            <div class="rodape">
+                <p class="rodape-titulo">Grupo Alura</p>
+                <ul class="lista_rodape">
+                    <li class="lista_rodape-titulo">Conheça-nos</li>
+                    <li class="lista_rodape-item"><a href="" class="lista_rodape-link">Sobre</a></li>
+                    <li class="lista_rodape-item"><a href="" class="lista_rodape-link">Informações corporativas</a></li>
+                    <li class="lista_rodape-item"><a href="" class="lista_rodape-link">Carreiras</a></li>
+                    <li class="lista_rodape-item"><a href="" class="lista_rodape-link">Comunidade</a></li>
+                    <li class="lista_rodape-item"><a href="" class="lista_rodape-link">Acessibilidade</a></li>
+                </ul>
+                <ul class="lista_rodape">
+                    <li class="lista_rodape-titulo">Pagamento</li>
+                    <li class="lista_rodape-item"><a href="" class="lista_rodape-link">Meios de pagamento</a></li>
+                    <li class="lista_rodape-item"><a href="" class="lista_rodape-link">Compre com pontos</a></li>
+                    <li class="lista_rodape-item"><a href="" class="lista_rodape-link">Cartão de crédito</a></li>
+                </ul>
+                <ul class="lista_rodape">
+                    <li class="lista_rodape-titulo">Deixe-nos ajudar você</li>
+                    <li class="lista_rodape-item"><a href="" class="lista_rodape-link">Sua conta</a></li>
+                    <li class="lista_rodape-item"><a href="" class="lista_rodape-link">Frete a prazo de entrega</a></li>
+                    <li class="lista_rodape-item"><a href="" class="lista_rodape-link">Devoluções e reembolsos</a></li>
+                    <li class="lista_rodape-item"><a href="" class="lista_rodape-link">Gerencie se conteúdo e dispositivos</a></li>
+                    <li class="lista_rodape-item"><a href="" class="lista_rodape-link">Ajuda</a></li>
+                </ul>   
+            </div>
+            <div class="rodape_direitos">
+                <hr>
+                <p>© 2021-2024 Amazon.com, Inc. ou suas afiliadas</p>
+            </div>
     </footer>
 </body>
 </html>

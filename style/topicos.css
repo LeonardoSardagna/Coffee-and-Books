@@ -10,6 +10,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.5em;
+    text-align: start;
 }
 
 .descricao_titulo{
@@ -23,13 +24,17 @@
     font-weight: 700;
 }
 
+.descricao p{
+    color: black;
+}
+
 .card_botoes{
     display: flex;
     justify-content: space-between;
 }
 .botoes{
     display: flex;
-    margin: 0.5em 0.5em
+    margin: 0.5em 0.5em;
 }
 
 .botoes_item{
@@ -115,5 +120,16 @@
 
     .topicos_item{
         padding: 0.7em;
+    }
+}
+
+@media screen and (min-width: 1724px){
+    .topicos_titulo{
+        margin: 1.5em 0 0 0 ;
+        font-size: 32px;
+        font-weight: 100;
+    }
+    .topicos_lista{
+        padding: 2em;
     }
 }

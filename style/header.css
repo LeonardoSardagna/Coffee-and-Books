@@ -89,6 +89,10 @@
     background-position: 1em;
 }
 
+.container_texto{
+    display: none;
+}
+
 @media screen and (min-width: 1024px){
     .container_titulo{
         font-family: var(--fonte_secundaria);
@@ -136,5 +140,28 @@
         display: none;
     }
 
+}
+
+@media screen and (min-width: 1728px){
+    .container{
+        margin: 0 2em;
+    }
     
+    .container_link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        font-weight: 400;
+    }
+
+    .container_texto{
+        display: block;
+    }
+
+    .opcoes{
+        margin-right: auto;
+    }
+
+
 }
