@@ -11,6 +11,10 @@
     width: 100%;
 }
 
+.swiper-wrapper{
+    gap: 10%;
+}
+
 .swiper-button-prev, .swiper-button-next{
     display: none;
 }
@@ -18,6 +22,34 @@
 .swiper-pagination{
     position: initial;
     margin: .5em 0;
+}
+
+#preco_descricao{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 280px;
+    text-align: center;
+}
+
+.preco_titulo{
+    margin-top: 1em;
+    font-size: 1em;
+    font-weight: 500;
+    color: #fc6621;
+}
+
+.autor{
+    font-size: 1em;
+    color: rgba(95, 95, 95, 0.751);
+    font-weight: 500;
+}
+
+.preco{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(#002f52);
 }
 
 @media screen and (min-width: 1024px){
@@ -53,9 +85,41 @@
         padding-top: 50px;
         font-size: 26px;
     }
+
+    .swiper-wrapper{
+        gap: 0;
+    }
+
+    #preco_descricao{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 280px;
+        text-align: center;
+    }
+    
+    .preco_titulo{
+        margin-top: 1em;
+        font-size: 1.1em;
+        font-weight: 500;
+        color: #fc6621;
+    }
+    
+    .autor{
+        font-size: 1.1em;
+        color: rgba(95, 95, 95, 0.751);
+        font-weight: 500;
+    }
+    
+    .preco{
+        font-size: 1.5em;
+        font-weight: bold;
+        color: var(#002f52);
+    }
 }
 
-@media screen and (min-width: 1724px){
+@media screen and (min-width: 1728px){
         .carrossel_container{
             display: flex;
             justify-content: space-between;
@@ -92,5 +156,37 @@
         .swiper-button-prev, .swiper-button-next{
             margin: 0;
         } 
+
+        .swiper-wrapper{
+            gap: 5%;
+        }
+    
+        #preco_descricao{
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 300px;
+            text-align: center;
+        }
+        
+        .preco_titulo{
+            margin-top: 1em;
+            font-size: 1.1em;
+            font-weight: 500;
+            color: #fc6621;
+        }
+        
+        .autor{
+            font-size: 1.1em;
+            color: rgba(95, 95, 95, 0.751);
+            font-weight: 500;
+        }
+        
+        .preco{
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(#002f52);
+        }
 
 }
