@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
-    background-color: var(--cor_principal);
-   
-    font-family: var(--fonte_principal);
+   background-color: var(--cor_principal);
+    font-family: "Smooch Sans", sans-serif;
     font-weight: 400;
     font-size: 16px;
 }
@@ -16,20 +17,27 @@ body{
 .container_dados_cadastrais{
     display: flex;
     flex-direction: column;
-    padding-top: 1em;
     gap: 24px;
+    margin-top: 1em;
 }
 
 .container{
     display: flex;
-    width: 80%;
+    flex-direction: column-reverse;
+    text-align: center;
     align-items: center;
-    justify-content: space-between;
+    margin: 1em 0 1em 0;
 }
 
-.container_dados{
-    display: flex;
-    flex-direction: column;
+.titulo_conteudo{
+    font-weight: bold;
+    line-height: normal;
+    font-size: 4rem;
+}
+
+.paragrafo_conteudo{
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 .container_botao{
@@ -38,5 +46,102 @@ body{
 }
 
 .container_imagem img{
-    width: 100%;
+    width: 90%;
+}
+
+.name, .email, .senha, .cpf, .data, ::placeholder{
+    background: #F2F2F2;
+    padding: 1rem;
+    font-size: 12px;
+}
+
+.name, .email, .senha, .cpf, .data{
+    border-radius: 24px;
+    border: solid 1px black
+}
+
+.botao_continuar{
+    color: white;
+    background-color:#1C1C1C ;
+    padding: 1rem;
+    border-radius: 24px;
+    font-size: 12px;
+}
+
+.login{
+    text-align: center;
+    padding: 1em;
+}
+
+.container_botao{
+    gap: 1rem;
+}
+
+.container_botao button{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1em 0;
+    border-radius: 20px;
+    border: solid 1px black;
+    background-color: white;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1024px){
+    .titulo_conteudo{
+        font-size: 6rem;
+    }
+
+    .paragrafo_conteudo{
+        font-size: 2rem;
+    }
+
+    .container_imagem img{
+        width: auto;
+    }
+
+    .name, .email, .senha, .cpf, .data, ::placeholder{
+        background: #F2F2F2;
+        padding: 1.5rem;
+        font-size: 14px;
+    }
+
+    .name, .email, .senha, .cpf, .data{
+        border-radius: 24px;
+        border: solid 2px black;
+    }
+
+    .botao_continuar{
+        color: white;
+        background-color:#1C1C1C ;
+        padding: 1.5rem;
+        border-radius: 24px;
+        font-size: 14px;
+    }
+
+    .login{
+        font-size: 1.5rem;
+    }
+
+    .container_botao button{
+        padding: 1em 0;
+        font-size: 1.1em;
+        font-weight: 500;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1728px){
+    .container{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .container_imagem img{
+        width: 120%;
+    }
 }
