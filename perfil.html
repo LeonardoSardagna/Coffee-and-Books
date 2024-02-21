@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,15 +14,15 @@
                 <h1 class="titulo_conteudo">Seja bem vindo</h1>
             </div>
             <div class="container_dados">
-
-                <div class="container_dados_cadastrais">
-                    <input class="name" type="text" placeholder="Nome de usuário">
-                    <input class="email" type="email" placeholder="E-mail">
-                    <input class="senha" type="password" placeholder="Senha">
-                    <input class="cpf" type="number"  placeholder="CPF">
-                    <input class="data" type="date" placeholder="Data de nascimento">
-                    <button class="botao_continuar">Continuar</button>
-                </div>
+                
+                <form class="container_dados_cadastrais">
+                    <input class="name" name="nome" type="text" placeholder="Nome de usuário" minlength="3" required>
+                    <input class="email" name="e-mail" type="email" placeholder="E-mail" minlength="4" required>
+                    <input class="senha" name="senha" type="password" placeholder="Senha" minlength="7" required>
+                    <input class="cpf" type="text" name="cpf"  placeholder="CPF" minlength="11" maxlength="14" required pattern="\d{3}\.?\d{3}.?\d{3}-?\d{2}">
+                    <input class="data" name="data" type="date" placeholder="Data de nascimento" required>
+                    <input class="botao_continuar" type="submit">
+                </form>
 
             </div>
            
@@ -39,5 +39,6 @@
             <img src="imagens/Rectangle 4.png" alt="">
         </div>
     </section>
+    <script src="js/formulario.js" type="module"></script>
 </body>
 </html>

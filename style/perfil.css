@@ -8,7 +8,10 @@
 }
 
 body{
-   background-color: var(--cor_principal);
+    background-image: url(../imagens/pattern01.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
     font-family: "Smooch Sans", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -88,6 +91,10 @@ body{
 }
 
 button:hover{
+    cursor: pointer;
+}
+
+.botao_continuar{
     cursor: pointer;
 }
 
