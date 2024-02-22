@@ -17,10 +17,15 @@
                 
                 <form class="container_dados_cadastrais">
                     <input class="name" name="nome" type="text" placeholder="Nome de usuário" minlength="3" required>
-                    <input class="email" name="e-mail" type="email" placeholder="E-mail" minlength="4" required>
+                    <span class="mensagem-erro-nome"></span>
+                    <input class="email" name="email" type="email" placeholder="E-mail" minlength="4" required>
+                    <span class="mensagem-erro-email"></span>
                     <input class="senha" name="senha" type="password" placeholder="Senha" minlength="7" required>
+                    <span class="mensagem-erro-senha"></span>
                     <input class="cpf" type="text" name="cpf"  placeholder="CPF" minlength="11" maxlength="14" required pattern="\d{3}\.?\d{3}.?\d{3}-?\d{2}">
+                    <span class="mensagem-erro-cpf"></span>
                     <input class="data" name="data" type="date" placeholder="Data de nascimento" required>
+                    <span class="mensagem-erro-data"></span>
                     <input class="botao_continuar" type="submit">
                 </form>
 
