@@ -1,9 +1,7 @@
 export default function validacpf(campo){
     const cpf = campo.value.split(/[\.-]/).join("");
     if(verificaNumerosRepetido(cpf) || primeiroDigito(cpf) || segundoDigito(cpf)){
-        console.log(`O CPF ${cpf} não é valido`)
-    }else{
-        console.log("CPF valido")
+        campo.setCustomValidity("O cpf está incorreto")
     }
 }
 

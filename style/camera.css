@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../imagens/pattern01.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: "Smooch Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.container{
+    text-align: center;
+    margin: 10%;
+}
+
+.titulo_camera{
+    font-size: 2.5rem ;
+}
+
+.paragrafo_camera{
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+
+.camera_botao{
+    padding: 1em;
+    border-radius: 16px;
+    border: solid 1px black;
+    font-size: 1.2rem;
+    background-color: #f48f8482;
+
+}

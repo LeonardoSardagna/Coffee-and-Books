@@ -17,6 +17,18 @@ body{
     font-size: 16px;
 }
 
+.container_dados02{
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.mensagem-erro{
+    margin-top: 1em;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 .container_dados_cadastrais{
     display: flex;
     flex-direction: column;

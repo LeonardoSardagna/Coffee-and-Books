@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/camera.css">
+    <link rel="shortcut icon" href="imagens/camera-dslr.png" type="image/x-icon">
+</head>
+<body>
+    <section class="container">
+        <div class="formulario_containeir">
+            <h2 class="titulo_camera">Reconhecimento Facial</h2>
+            <p class="paragrafo_camera">Clique no quadro abaixo para capturarmos uma imagem sua!</p>
+            <img class="imagem_rosto" src="imagens/reconhecimento.png" alt="Rosto com olhos e um sorriso dentro de um enquadramento">
+
+            <div class="formulario_camera">
+                <video class="reconhecimento_facial" width="320" height="240" autoplay></video>
+                <button class="camera_botao">Tirar Foto</button>
+            </div>
+
+            <div class="formulario_mensagem">
+                <canvas width="320" height="240"> </canvas>
+                <img src="imagens/ícone check.png" alt="Ícone de validação" class="formulario__imagem">
+                <p>Prontinho, imagem capturada!</p>
+            </div>
+        </div>
+    </section>
+    <script src="js/camera.js"></script>
+</body>
+</html>

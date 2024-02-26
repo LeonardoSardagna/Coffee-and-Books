@@ -1,6 +1,23 @@
 import validacpf from "./validaCPF.js";
 import VerificadorDeIdade from "./idade.js";
 
+const formulario = document.querySelector(".container_dados_cadastrais")
+
+formulario.addEventListener('submit', (e)=>{
+    e.preventDefault()
+
+    const listaDeDados = {
+        "nome": e.target["nome"].value,
+        "email": e.target["email"].value,
+        "senha": e.target["senha"].value,
+        "cpf": e.target["cpf"].value,
+        "data": e.target["data"].value
+    }
+
+    localStorage.setItem("Cadastro", JSON.stringify(listaDeDados))
+})
+
+
 const camposDosFormulario = document.querySelectorAll("[required]")
 const tiposDeErro = [
     'valueMissing',
@@ -49,10 +66,21 @@ function validaCampo(campo){
     if(campo.name === "data" && campo.value != ''){
         VerificadorDeIdade(campo)
     }
-    
     let mensagem = ''
+    
     tiposDeErro.forEach(erro => {
-        mensagem = mensagens[campo.name][erro]
-        console.log(mensagem)
+        if(campo.validity[erro]){
+            mensagem = mensagens[campo.name][erro]
+        }
     })
+
+    const areaMensagem = campo.parentNode.querySelector('.mensagem-erro')
+    const validadorDeInput = campo.checkValidity()
+
+    if(!validadorDeInput){
+        areaMensagem.textContent = mensagem
+    }else{
+        areaMensagem.textContent = ''
+    }
+
 }
