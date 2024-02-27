@@ -35,13 +35,3 @@
 ###
 
 <p align="left">Registration Form:<br><br>The site includes a registration form for users to create accounts and customize their user experience.<br>Profile Image Registration:<br><br>Users have the option to register an image for their profiles, adding a personal touch to their presence on the site.</p>
-
-###
-
-<h2 align="left">How to Contribute</h2>
-
-###
-
-<p align="left">If you want to contribute to the development of this project, feel free to:<br><br>Report issues or suggest improvements through issues.<br>Contribute code improvements through pull requests.</p>
-
-###
