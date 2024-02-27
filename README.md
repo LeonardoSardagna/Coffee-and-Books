@@ -2,7 +2,7 @@
 
 ###
 
-<p align="left">Welcome to the README of our online book site! I developed this project using HTML, CSS, and JavaScript, based on the knowledge gained from various courses over time.</p>
+<p align="left">Welcome to the README of my online book site! I developed this project using HTML, CSS and JavaScript, based on the knowledge acquired in several courses over time.</p>
 
 ###
 
