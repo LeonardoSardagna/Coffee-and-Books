@@ -111,6 +111,12 @@ button:hover{
 }
 
 @media screen and (min-width: 1024px){
+    
+    .container{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
     .titulo_conteudo{
         font-size: 6rem;
     }
