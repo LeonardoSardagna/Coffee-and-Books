@@ -30,6 +30,14 @@
 
 ###
 
+<h2 align="left">Additional Features</h2>
+
+###
+
+<p align="left">Registration Form:<br><br>The site includes a registration form for users to create accounts and customize their user experience.<br>Profile Image Registration:<br><br>Users have the option to register an image for their profiles, adding a personal touch to their presence on the site.</p>
+
+###
+
 <h2 align="left">How to Contribute</h2>
 
 ###
