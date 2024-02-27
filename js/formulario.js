@@ -15,6 +15,7 @@ formulario.addEventListener('submit', (e)=>{
     }
 
     localStorage.setItem("Cadastro", JSON.stringify(listaDeDados))
+    window.location.href = 'camera.html'
 })
 
 

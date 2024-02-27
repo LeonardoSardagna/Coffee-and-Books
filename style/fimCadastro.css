@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../imagens/pattern01.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: "Smooch Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+    background-color: #f48f84ed;
+    border-radius: 24px;
+    padding: 1em;
+    border: solid 1px black;
+}
+
+.container_titulo{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.container_paragrafo{
+    font-size: 1.2rem;
+}
+
+.container_imagem{
+    width:80%;
+    margin: 1em auto;
+    border-radius: 24px;
+}
+
+.botao_voltar{
+    text-decoration: none;
+    color: black;
+    background-color: orange;
+    border-radius: 24px;
+    padding: 1em;
+    text-align: center;
+    margin-top: 1em;
+    font-weight: bold;
+    border: solid 1px black;
+}
+
+@media screen and (min-width: 1024px){
+    .container_titulo{
+        text-align: center;
+        font-size: 4rem;
+    }
+    
+    .container_paragrafo{
+        font-size: 2rem;
+    }
+    
+    .container_imagem{
+        width:60%;
+        margin: 1em auto;
+        border-radius: 24px;
+    }
+
+    .botao_voltar{
+        font-size: 1.5em;
+        width:60%;
+        margin: 1em auto;
+    }
+}
+
+@media screen and (min-width: 1728px){
+    .container_titulo{
+        text-align: center;
+        font-size: 4rem;
+    }
+    
+    .container_paragrafo{
+        font-size: 3rem;
+    }
+    
+    .container_imagem{
+        margin-top: 1rem;
+        width:50%;
+        margin: 1em auto;
+        border-radius: 24px;
+        
+    }
+
+    .botao_voltar{
+        font-size: 2em;
+        width:60%;
+        margin: 1em auto;
+    }
+}
