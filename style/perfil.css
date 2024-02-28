@@ -111,11 +111,6 @@ button:hover{
 }
 
 @media screen and (min-width: 1024px){
-    
-    .container{
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
 
     .titulo_conteudo{
         font-size: 6rem;
@@ -126,7 +121,7 @@ button:hover{
     }
 
     .container_imagem img{
-        width: auto;
+        width: 80%;
     }
 
     .name, .email, .senha, .cpf, .data, ::placeholder{

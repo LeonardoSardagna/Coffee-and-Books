@@ -41,15 +41,24 @@ body{
 
 .formulario_camera{
      display: none; 
+     flex-direction: column;
+     gap: 3em;
 }
 
 .formulario_mensagem{
      display: none; 
+     flex-direction: column;
+     gap: 1em;
 }
 
 .formulario_mensagem p{
     margin-top: 1em;
     font-size: 1.2rem;
+}
+
+.formulario_mensagem img{
+    width: 15%;
+    margin: 0 auto;
 }
 
 .abrir_conta{
@@ -84,7 +93,12 @@ body{
     }
     
     .reconhecimento_facial{
-        width: 20em;
+        width: 50em;
+        height: 25em;
+    }
+
+    .canvas{
+        width: 30em;
         height: 25em;
     }
 
@@ -99,5 +113,20 @@ body{
 
     .formulario_mensagem p{
         font-size: 2em;
+    }
+
+    .formulario_mensagem img{
+        width: 10%;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .formulario_mensagem img{
+        width: 5%;
+    }
+
+    .abrir_conta{
+        width: 20%;
+        font-size: 1.5em;
     }
 }
