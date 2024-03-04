@@ -33,6 +33,6 @@ botaoAbrirConta.addEventListener("click", ()=>{
 
     localStorage.setItem("Cadastro", JSON.stringify(converter))
 
-    window.location.href = ''
+    window.location.href = 'fimCadastro.html'
 
 })
